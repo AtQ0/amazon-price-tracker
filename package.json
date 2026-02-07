@@ -15,6 +15,7 @@
     "dotenv-cli": "^11.0.0",
     "lucide-react": "^0.563.0",
     "next": "16.1.6",
+    "next-auth": "^5.0.0-beta.30",
     "prisma": "^7.3.0",
     "radix-ui": "^1.4.3",
     "react": "19.2.3",
@@ -39,6 +40,7 @@
     "unrs-resolver"
   ],
   "trustedDependencies": [
+    "msw",
     "sharp",
     "unrs-resolver"
   ]
