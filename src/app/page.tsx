@@ -2,6 +2,7 @@ import { auth } from "@/auth";
 import LoginView from "./LoginView";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import Dashboard from "@/components/Dashboard";
 
 export default async function Home() {
   const session = await auth();
@@ -11,11 +12,11 @@ export default async function Home() {
       {user && (
         <div className="p-4 h-screen">
           <Header user={user} />
-          <div className="mt-4 grid grid-cols-12 gap-4">
+          <div className="mt-4 grid grid-cols-12 gap-4 pb-4">
             <div className="col-span-3">
               <Sidebar />
             </div>
-            <div className="bg-white col-span-9 rounded-2xl">content</div>
+            <Dashboard />
           </div>
         </div>
       )}

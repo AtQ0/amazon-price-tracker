@@ -9,6 +9,9 @@
     "lint": "eslint",
     "db:push": "dotenv -e .env.local -- prisma db push"
   },
+  "overrides": {
+    "react-is": "^19.0.0-rc-69d4b800-20241021"
+  },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -20,6 +23,7 @@
     "radix-ui": "^1.4.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "recharts": "2.15.4",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
